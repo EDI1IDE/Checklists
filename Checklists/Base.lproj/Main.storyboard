@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p7l-Mo-Xye">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,27 +17,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="ci5-zE-yn7">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="ci5-zE-yn7">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="49.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ci5-zE-yn7" id="8w4-oP-kLM">
-                                    <rect key="frame" x="0.0" y="0.0" width="338.33333333333331" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321.66666666666669" height="49.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXT-ag-t8G">
+                                            <rect key="frame" x="16" y="10.999999999999998" width="20" height="27.333333333333329"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="kTS-nu-drL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3v-VH-4hF">
-                                            <rect key="frame" x="26" y="11.000000000000002" width="288.33333333333331" height="21.666666666666671"/>
+                                            <rect key="frame" x="48" y="8" width="261.66666666666669" height="33.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="W3v-VH-4hF" firstAttribute="top" secondItem="8w4-oP-kLM" secondAttribute="topMargin" id="HVT-ma-pMJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="W3v-VH-4hF" secondAttribute="bottom" id="hJQ-ic-Cyn"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="W3v-VH-4hF" secondAttribute="trailing" constant="16" id="pcz-9I-QnT"/>
-                                        <constraint firstItem="W3v-VH-4hF" firstAttribute="leading" secondItem="8w4-oP-kLM" secondAttribute="leadingMargin" constant="10" id="uBx-4v-FWw"/>
+                                        <constraint firstItem="W3v-VH-4hF" firstAttribute="top" secondItem="8w4-oP-kLM" secondAttribute="top" constant="8" id="GbD-k2-2BD"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cXT-ag-t8G" secondAttribute="bottom" id="UnA-uy-TBm"/>
+                                        <constraint firstItem="cXT-ag-t8G" firstAttribute="leading" secondItem="8w4-oP-kLM" secondAttribute="leading" constant="16" id="bCB-DW-1ip"/>
+                                        <constraint firstItem="W3v-VH-4hF" firstAttribute="leading" secondItem="cXT-ag-t8G" secondAttribute="trailing" constant="12" id="gwT-eH-9z0"/>
+                                        <constraint firstAttribute="bottom" secondItem="W3v-VH-4hF" secondAttribute="bottom" constant="8" id="ovF-am-pZJ"/>
+                                        <constraint firstItem="cXT-ag-t8G" firstAttribute="top" secondItem="8w4-oP-kLM" secondAttribute="topMargin" id="q9p-PU-gid"/>
+                                        <constraint firstAttribute="trailing" secondItem="W3v-VH-4hF" secondAttribute="trailing" constant="12" id="wE9-Wk-M8V"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Wc5-8i-EyT" kind="show" identifier="EditItem" trigger="accessoryAction" id="fWC-nA-4kN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -59,7 +75,7 @@
         <!--Add Item-->
         <scene sceneID="utr-4Z-KB4">
             <objects>
-                <tableViewController id="Wc5-8i-EyT" customClass="AddItemTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Wc5-8i-EyT" customClass="ItemDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="cVc-vo-ds4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +156,9 @@
             <point key="canvasLocation" x="-20" y="84.975369458128085"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fWC-nA-4kN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

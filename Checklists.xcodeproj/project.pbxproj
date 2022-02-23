@@ -14,7 +14,7 @@
 		4409BFBF27C2862A0001F7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4409BFBE27C2862A0001F7D1 /* Assets.xcassets */; };
 		4409BFC227C2862A0001F7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4409BFC027C2862A0001F7D1 /* LaunchScreen.storyboard */; };
 		4409BFCA27C435AB0001F7D1 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFC927C435AB0001F7D1 /* ChecklistItem.swift */; };
-		4409BFCC27C56BC90001F7D1 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFCB27C56BC90001F7D1 /* AddItemTableViewController.swift */; };
+		4409BFCC27C56BC90001F7D1 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFCB27C56BC90001F7D1 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		4409BFC127C2862A0001F7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4409BFC327C2862A0001F7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4409BFC927C435AB0001F7D1 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		4409BFCB27C56BC90001F7D1 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		4409BFCB27C56BC90001F7D1 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				4409BFB727C286290001F7D1 /* SceneDelegate.swift */,
 				4409BFB927C286290001F7D1 /* ChecklistViewController.swift */,
 				4409BFC927C435AB0001F7D1 /* ChecklistItem.swift */,
-				4409BFCB27C56BC90001F7D1 /* AddItemTableViewController.swift */,
+				4409BFCB27C56BC90001F7D1 /* ItemDetailViewController.swift */,
 				4409BFBB27C286290001F7D1 /* Main.storyboard */,
 				4409BFBE27C2862A0001F7D1 /* Assets.xcassets */,
 				4409BFC027C2862A0001F7D1 /* LaunchScreen.storyboard */,
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4409BFBA27C286290001F7D1 /* ChecklistViewController.swift in Sources */,
-				4409BFCC27C56BC90001F7D1 /* AddItemTableViewController.swift in Sources */,
+				4409BFCC27C56BC90001F7D1 /* ItemDetailViewController.swift in Sources */,
 				4409BFB627C286290001F7D1 /* AppDelegate.swift in Sources */,
 				4409BFB827C286290001F7D1 /* SceneDelegate.swift in Sources */,
 				4409BFCA27C435AB0001F7D1 /* ChecklistItem.swift in Sources */,
@@ -304,8 +304,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,8 +332,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
