@@ -32,8 +32,8 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-      textField.becomeFirstResponder()
+        super.viewWillAppear(animated)
+        textField.becomeFirstResponder()
     }
     
     // MARK: - Actions
@@ -71,8 +71,5 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
         
         return true
     }
-    
-    
-    
     
 }

@@ -31,7 +31,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
             title = "Edit Item"
             textField.text = item.text
             doneBarButton.isEnabled = true
-          }
+        }
     }
     
     @IBAction func cancel() {
@@ -42,7 +42,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         if let item = itemToEdit {
             item.text = textField.text!
             delegate?.itemDetailViewController(self, didFinishEditing: item)
-          } else {
+        } else {
             let item = ChecklistItem()
             item.text = textField.text!
             delegate?.itemDetailViewController(self, didFinishAdding: item)
@@ -55,8 +55,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-      textField.becomeFirstResponder()
+        super.viewWillAppear(animated)
+        textField.becomeFirstResponder()
     }
     
     // MARK: - Text Field Delegates
@@ -73,4 +73,5 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         doneBarButton.isEnabled = false
         return true
     }
+    
 }

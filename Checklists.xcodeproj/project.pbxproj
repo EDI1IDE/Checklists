@@ -18,6 +18,7 @@
 		4409BFCE27C7B67B0001F7D1 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFCD27C7B67B0001F7D1 /* AllListsViewController.swift */; };
 		4409BFD027C7ED090001F7D1 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFCF27C7ED090001F7D1 /* Checklist.swift */; };
 		4409BFD227C943BF0001F7D1 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFD127C943BF0001F7D1 /* ListDetailViewController.swift */; };
+		4409BFD427CAD9F00001F7D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409BFD327CAD9F00001F7D1 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4409BFCD27C7B67B0001F7D1 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		4409BFCF27C7ED090001F7D1 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		4409BFD127C943BF0001F7D1 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		4409BFD327CAD9F00001F7D1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				4409BFB527C286290001F7D1 /* AppDelegate.swift */,
 				4409BFB727C286290001F7D1 /* SceneDelegate.swift */,
+				4409BFD327CAD9F00001F7D1 /* DataModel.swift */,
 				4409BFCF27C7ED090001F7D1 /* Checklist.swift */,
 				4409BFC927C435AB0001F7D1 /* ChecklistItem.swift */,
 				4409BFB927C286290001F7D1 /* ChecklistViewController.swift */,
@@ -161,6 +164,7 @@
 				4409BFCA27C435AB0001F7D1 /* ChecklistItem.swift in Sources */,
 				4409BFD027C7ED090001F7D1 /* Checklist.swift in Sources */,
 				4409BFD227C943BF0001F7D1 /* ListDetailViewController.swift in Sources */,
+				4409BFD427CAD9F00001F7D1 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
